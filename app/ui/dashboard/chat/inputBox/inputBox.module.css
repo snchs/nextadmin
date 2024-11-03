@@ -1,0 +1,30 @@
+/* inputBox.module.css */
+
+.inputContainer {
+  display: flex;
+  padding: 10px;
+  background-color: var(--inputBg, #fff);
+  border-top: 1px solid #ddd;
+}
+
+.inputBox {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sendButton {
+  background-color: var(--buttonBg, #5d57c9);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.sendButton:hover {
+  background-color: var(--buttonHoverBg, #4b46a5);
+}

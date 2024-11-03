@@ -1,7 +1,11 @@
+import ChatPage from '../../ui/dashboard/chat/chatPage/chatPage';
+
 const Chat = () => {
   return (
-      <div>Chat</div>
-  )
-}
+    <div>
+      <ChatPage />
+    </div>
+  );
+};
 
-export default Chat
+export default Chat;

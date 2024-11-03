@@ -1,0 +1,65 @@
+/* chatPage.module.css */
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  background-color: var(--bgSoft); /* использована переменная */
+}
+
+.messageList {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.botMessage {
+  background-color: var(--botMessageBg, #e0e0e0); /* переменная для фона бота */
+  color: var(--botMessageText, #000); /* переменная для текста бота */
+  align-self: flex-start;
+}
+
+.userMessage {
+  background-color: var(--userMessageBg, #5d57c9); /* переменная для фона пользователя */
+  color: var(--userMessageText, #fff); /* переменная для текста пользователя */
+  align-self: flex-end;
+}
+
+.inputContainer {
+  display: flex;
+  padding: 10px;
+  background-color: var(--inputBg, #fff); /* переменная для фона поля ввода */
+  border-top: 1px solid #ddd;
+}
+
+.inputBox {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sendButton {
+  background-color: var(--buttonBg, #5d57c9); /* переменная для кнопки */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.sendButton:hover {
+  background-color: var(--buttonHoverBg, #4b46a5); /* переменная для кнопки при наведении */
+}

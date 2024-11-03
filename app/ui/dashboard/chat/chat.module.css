@@ -1,61 +1,65 @@
-.container{
+/* chat.module.css */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
   background-color: var(--bgSoft);
-  padding: 20px;
   border-radius: 10px;
-  margin-top: 20px;
+  padding: 20px;
 }
 
-.top{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.addButton{
+.chat-box {
+  flex-grow: 1;
+  overflow-y: auto;
   padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.user-message {
   background-color: #5d57c9;
-  color: var(--text);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  color: white;
+  align-self: flex-end;
+  text-align: right;
 }
 
-.table{
-  width: 100%;
+.bot-message {
+  background-color: #ddd;
+  align-self: flex-start;
+  text-align: left;
 }
 
-.table td{
-  padding: 10px;
-}
-
-.product{
+.input-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  padding-top: 10px;
 }
 
-.productImage{
-  border-radius: 50%;
-  object-fit: cover;
+.chat-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
-.buttons{
-  display: flex;
-  gap: 10px;
-}
-
-.button{
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--text);
+.send-button {
+  padding: 10px 20px;
+  background-color: #5d57c9;
+  color: white;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-}
-
-.view{
-  background-color: teal;
-}
-
-.delete{
-  background-color: crimson;
 }
