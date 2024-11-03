@@ -26,7 +26,7 @@ const menuItems = [
       },
       {
         title: "Chat",
-        path: "/dashboard/products",
+        path: "/dashboard/chat",
         icon: <MdShoppingBag />,
       },
       {
