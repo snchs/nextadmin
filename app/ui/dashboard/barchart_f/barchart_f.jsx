@@ -28,6 +28,8 @@ const Barchart_f = () => {
       .catch((error) => console.error('Error loading data:', error));
   }, []);
 
+  
+
   useEffect(() => {
     handleFilter();
   }, [selectedCategory, selectedYear, selectedType, selectedAp]);
