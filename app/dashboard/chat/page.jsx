@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "@/app/ui/dashboard/products/products.module.css";
+import styles from "@/app/ui/dashboard/chat/chat.module.css";
 // import Search from "@/app/ui/dashboard/search/search";
 // import Pagination from "@/app/ui/dashboard/pagination/pagination";
 // import { fetchProducts } from "@/app/lib/data";
 // import { deleteProduct } from "@/app/lib/actions";
 
-const ProductsPage = async ({ searchParams }) => {
+const Chat = async ({ searchParams }) => {
   const q = searchParams?.q || "";
   const page = searchParams?.page || 1;
   // const { count, products } = await fetchProducts(q, page);
@@ -15,7 +15,7 @@ const ProductsPage = async ({ searchParams }) => {
     <div className={styles.container}>
       <div className={styles.top}>
         {/* <Search placeholder="Search for a product..." /> */}
-        <Link href="/dashboard/products/add">
+        <Link href="/dashboard/chat/add">
           <button className={styles.addButton}>Add New</button>
         </Link>
       </div>
@@ -38,4 +38,4 @@ const ProductsPage = async ({ searchParams }) => {
   );
 };
 
-export default ProductsPage;
+export default Chat;

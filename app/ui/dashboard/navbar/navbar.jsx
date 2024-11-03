@@ -20,7 +20,7 @@ const Navbar = () => {
           <input type="text" placeholder="Search..." className={styles.input} />
         </div>
         <div className={styles.icons}>
-          <MdOutlineChat size={20} />
+          <a href="/dashboard/products"><MdOutlineChat size={20} /></a>
           <MdNotifications size={20} />
           <MdPublic size={20} />
         </div>
